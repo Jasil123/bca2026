@@ -314,4 +314,4 @@ The **Professional Consultation System** provides a robust solution for virtual 
 
 **Submitted for:** BCA Final Year Project  
 **University:** University of Calicut  
-**Academic Year:** 2025-2026
+**Academic Year:** 2023-2026
