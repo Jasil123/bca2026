@@ -70,25 +70,25 @@ graph TD
 ### Use Case Diagram
 
 ```mermaid
-usecaseDiagram
-    actor "Client / Patient" as Client
-    actor "Professional / Doctor" as Prof
-    actor "System Admin" as Admin
+graph LR
+    Client["Client / Patient"]
+    Prof["Professional / Doctor"]
+    Admin["System Admin"]
 
-    package "Consultation System" {
-        usecase "Register via Telegram" as UC1
-        usecase "Agree to Policy" as UC2
-        usecase "Join Queue" as UC3
-        usecase "View Live Status" as UC4
-        usecase "Join Video Call" as UC5
+    subgraph "Consultation System"
+        UC1("Register via Telegram")
+        UC2("Agree to Policy")
+        UC3("Join Queue")
+        UC4("View Live Status")
+        UC5("Join Video Call")
         
-        usecase "Login to Panel" as UC6
-        usecase "Manage Queue (Next/Stop)" as UC7
-        usecase "Initiate Video Call" as UC8
-        usecase "Set Status (Busy/Available)" as UC9
+        UC6("Login to Panel")
+        UC7("Manage Queue (Next/Stop)")
+        UC8("Initiate Video Call")
+        UC9("Set Status (Busy/Available)")
         
-        usecase "Manage Database" as UC10
-    }
+        UC10("Manage Database")
+    end
 
     Client --> UC1
     Client --> UC2
