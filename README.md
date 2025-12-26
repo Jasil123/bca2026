@@ -70,7 +70,7 @@ graph TD
 ### Use Case Diagram
 
 ```mermaid
-useCaseDiagram
+usecaseDiagram
     actor "Client / Patient" as Client
     actor "Professional / Doctor" as Prof
     actor "System Admin" as Admin
